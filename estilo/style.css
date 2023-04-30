@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Dancing +Script:wght@400;500;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Tangerine :wght@400;700 & display=swap');
+
+:root {
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Dancing Script', cursive;
+    --font03: 'Passion One', cursive;
+    --font04: 'Tangerine', cursive;
+}
+
+html,body{
+    font-family: var(--font01);
+    height: 100hr;
+    background-image: linear-gradient(to left, #f50737c5, #05BBFF, #f9ec00a9);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+       background-position-x: 0%; 
+    }
+    100%{
+        background-position-x: 100%;
+    }
+
+}
+
+header{
+    background-color: #0000007c;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--font03);    
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 7vw;
+}
+
+header p {
+    padding-bottom: 50px;
+    font-size: 2vw;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    line-height: 2em;
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--font04);
+    font-size: 2.5vw;
+    max-width: 1400px;
+    min-width: 400px;
+    margin: auto;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+section.imagem{
+    background-color: #00000081;
+    color: white;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+section.imagem p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 5px;
+    text-shadow: 2px 2px 0 black;
+    border-radius: 30px;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
